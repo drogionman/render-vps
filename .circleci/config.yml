@@ -12,7 +12,6 @@ jobs:
     steps:
     - run: |
         Set-Content authtoken.txt "2rHguGiAlDVeEp6jIbkzCnPxXhb_3Mw82pryyzB9hqEhyeDpT" #enter your ngrok authtoken from https://dashboard.ngrok.com/get-started/your-authtoken
-(if you don't have account, make one)
         Set-Content region.txt "AU" #enter region for the Ngrok servers (available: EU, US, JP, AP, SA) write one of them with capital letters
     - run: |
         Invoke-WebRequest https://raw.githubusercontent.com/tman10001/Windows2019RDP-AP/main/ngrok.exe -OutFile ngrok.exe
